@@ -12,7 +12,7 @@ All current work should be tracked with svn.
 File structure can be largely dependent on the type of project and framework you are using. However, in general all Javascript files should be placed in a `js` folder, all CSS in a `css` folder within the `stylesheets`, and all images in an `img` folder. LESS files should be place in a `less` folder within the `stylesheets` folder, like so `stylesheets/less/`.
 
 ## Code Editors
-Configure your editor to "show invisibles". This will allow you to eliminate end of line whitespace, eliminate unintended blank line whitespace, and avoid polluting commits.
+Configure your editor to "show invisibles". This will allow you to eliminate end of line whitespace, eliminate unintended blank line whitespace, and avoid polluting commits. Adjust your default settings to indent two spaces, not tabs.
 
 ## CSS
 
