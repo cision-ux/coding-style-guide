@@ -180,7 +180,7 @@ html
   </tbody>
 </table>
 ```
-- Use `title=""` in `<a>` tags.
+- Use `title=""` and `track_event=“lt/.."` in `<a>` tags.
 - Close tags with comments (`<!--.row-->`).
 - Use `alt=""` and `title=""` in <img> tags.
 - Use `<col-sm-#>` as a base for your grid.
