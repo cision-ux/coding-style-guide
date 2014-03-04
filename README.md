@@ -21,8 +21,23 @@ Before reading this, you should have a good understanding of CSS specificity, an
 - Use meaningful class names (`.button-primary` instead of `.yee-1901`). Classes should define why that style is there not what it looks like.
 - End every declaration with a semicolon (`;`) for consistency and extensibility reasons.
 - Each selector should be on its own line, ending in either a comma or an opening curly brace. Add a single space after selectors and colons in style definitions like so:
+```css
+.selector-1,
+.selector-2,
+.selector-3 {
+  background: #fff;
+  color: #000;
+}
+```
+- Not like this:
+```css
+.selector-1, .selector-2, .selector-3 {
+  background: #fff;
+  color: #000;
+}
 
-
+.selector-1 { background: #fff; color: #000; }
+```
 - Put a blank line between rules.
 - Use single quotation marks (`''`) instead of double quotation (`""`) marks for attribute selectors (`h2[rel='friend']`) or property values. Do not use quotation marks in URI values (`url()`).
 - Use underscore (`_`) for images, no camelCase.
