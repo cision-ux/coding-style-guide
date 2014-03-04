@@ -11,9 +11,12 @@ All current work should be tracked with svn.
 
 File structure can be largely dependent on the type of project and framework you are using. However, in general all Javascript files should be placed in a `js` folder, all CSS in a `css` folder within the `stylesheets`, and all images in an `img` folder. LESS files should be place in a `less` folder within the `stylesheets` folder, like so `stylesheets/less/`.
 
+## Code Editors
+Configure your editor to "show invisibles". This will allow you to eliminate end of line whitespace, eliminate unintended blank line whitespace, and avoid polluting commits.
+
 ## CSS
 
-Before reading this, you should have a good understanding of CSS specificity, and the [LESS](http://lesscss.org/) syntax.
+Before reading this, you should have a good understanding of CSS specificity, and the [LESS](http://lesscss.org/) syntax. As a rule of thumb, don't nest further than 3 levels deep. If you find yourself going further, think about reorganizing your rules (either the specificity needed, or the layout of the nesting).
 
 - Use two-space, soft-indentation (`  `).
 - Use LESS on everything you can.
@@ -46,6 +49,7 @@ Before reading this, you should have a good understanding of CSS specificity, an
 - use a “last-of-type” or “first-of-type” class when you need to remove styling on the first or last element (LOOK INTO AND SHARE AN EXAMPLE IN USE)
 
 ### LESS
+Divide your CSS styling in to separate LESS files following the boostrap setup.
 - alerts.less
 - badges.less
 - breadcrumbs.less
