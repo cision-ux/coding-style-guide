@@ -182,7 +182,7 @@ html
 ```
 - Use `title=""` and `track_event=“lt/.."` in `<a>` tags.
 - Close tags with comments (`<!--.row-->`).
-- Use `alt=""` and `title=""` in <img> tags.
+- Use `alt=""` and `title=""` in `<img>` tags.
 - Use `<col-sm-#>` as a base for your grid.
 - Do not use `.row` for full width items like H tags unless necessary.
 - All subheads should be in `<small>`.
@@ -225,7 +225,7 @@ When chaining or cascading method calls on an object, each method call should be
 
 ### Style
 
-- **NEEDS TO BE DECIDED** Do not rely on semicolon insertion. VS Do your best to never use a semicolon. This means avoiding them at line breaks and avoiding multi-statement lines. For more info, read [Mislav's blog post](http://mislav.uniqpath.com/2010/05/semicolons/).
+Do not rely on semicolon insertion.
 - Use two-space, soft-indentation.
 - Use camelCase for naming variable and function names, except for constructor functions that need to be called with the new prefix. For these use Capitalization.
 - Try to prefix all javascript-based selectors with `js-`. This is taken from [slightly obtrusive javascript](http://ozmm.org/posts/slightly_obtrusive_javascript.html). The idea is that you should be able to tell a presentational class from a functional class. Most of the codebase doesn't do this, let's try and move toward it.
