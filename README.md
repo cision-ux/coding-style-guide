@@ -223,6 +223,56 @@ When chaining or cascading method calls on an object, each method call should be
       .height(300)
       .append('<img />');
 
+### Performance
+
+When using jQuery selectors, try to find the elements you're using as few times as possible. Cache jQuery selectors in variables instead of finding them in the DOM again every time you need them. Cache the selector as early as possible in order to avoid unncessary DOM traversal. 
+  
+    var $link = $('#some-link');
+    var $content $('#content');
+
+    $link
+      .on({
+        click: function (event) {
+          $content
+            .addClass('active');   
+        }
+      });
+
+In the example above, rather than getting `#content` from the DOM every time we click on `#some-link`, we get it ahead of time. `#content` is available before we click `#some-link`, so there is no need to find it in the DOM every time we click on `#some-link`.
+
+    var $element = $('#element');
+
+    $.ajax({
+      url: "http://example.com/some/file/path", 
+      beforeSend: function () {
+        $element
+          .addClass('loading');
+      },
+      success: function (result) {
+        var $result = $(result);
+
+        $element
+          .hide()
+          .html($result)
+          .fadeIn();
+      }
+    });
+
+In this example, we're using an element multiple times, but it's available from the very beginning. Therefore, we can get it one time and then use it more than once without finding it in the DOM again. 
+
+When creating event bindings that may run extremely frequently, throttle them so that they don't lag or freeze the browser. Throttling event bindings causes them to run a function only when the event has been triggered and a certain amount of time has passed since the last time the function was run. One way to do this is to use throttle methods like those present in [underscore.js](http://underscorejs.org/#throttle) and [jQuery debounce](http://benalman.com/code/projects/jquery-throttle-debounce/docs/files/jquery-ba-throttle-debounce-js.html). This will prevent a performance heavy function from running more often than it needs to.
+
+    var onResize = _.throttle(function () {
+          // Do something when the page resizes
+        }, 100);
+
+    $(window)
+      .on({
+        resize: onResize
+      });
+
+In this example, a function is run when the window is resized and the function has not already run within the last 100 milliseconds.
+
 ### Style
 
 Do not rely on semicolon insertion.
