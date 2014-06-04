@@ -254,6 +254,7 @@ In the example above, rather than getting `#content` from the DOM every time we 
         $element
           .hide()
           .html($result)
+          .removeClass('loading')
           .fadeIn();
       }
     });
