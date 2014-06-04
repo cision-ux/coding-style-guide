@@ -261,7 +261,7 @@ In the example above, rather than getting `#content` from the DOM every time we 
 
 In this example, we're using an element multiple times, but it's available from the very beginning. Therefore, we can get it one time and then use it more than once without finding it in the DOM again. 
 
-When creating event bindings that may run extremely frequently, throttle them so that they don't lag or freeze the browser. Throttling event bindings causes them to run a function only when the event has been triggered and a certain amount of time has passed since the last time the function was run. One way to do this is to use throttle methods like those present in [underscore.js](http://underscorejs.org/#throttle) and [jQuery debounce](http://benalman.com/code/projects/jquery-throttle-debounce/docs/files/jquery-ba-throttle-debounce-js.html). This will prevent a performance heavy function from running more often than it needs to.
+When creating event bindings that may run extremely frequently, throttle them so that they don't lag or freeze the browser. Throttling event bindings causes them to run a function only when the event has been triggered and a certain amount of time has passed since the last time the function was run. One way to do this is to use throttle methods like those present in [underscore.js](http://underscorejs.org/#throttle) and [jQuery Debounce](http://benalman.com/code/projects/jquery-throttle-debounce/docs/files/jquery-ba-throttle-debounce-js.html). This will prevent a performance heavy function from running more often than it needs to.
 
     var onResize = _.throttle(function () {
           // Do something when the page resizes
