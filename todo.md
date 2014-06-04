@@ -36,7 +36,7 @@
 ---------------------------------------------------------*/
 ```
 
-- The way labels are handled on the profiles pages in gmd is not consistent. One method is to us an inline list of labels and the other uses floated labels.
+
 - classes needed for page types
 - classes needed for more elements i.e. news-releases
 
