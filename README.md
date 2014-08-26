@@ -228,7 +228,7 @@ When chaining or cascading method calls on an object, each method call should be
 When using jQuery selectors, try to find the elements you're using as few times as possible. Cache jQuery selectors in variables instead of finding them in the DOM again every time you need them. Cache the selector as early as possible in order to avoid unncessary DOM traversal. 
   
     var $link = $('#some-link');
-    var $content $('#content');
+    var $content = $('#content');
 
     $link
       .on({
