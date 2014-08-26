@@ -18,6 +18,27 @@ Configure your editor to "show invisibles". This will allow you to eliminate end
 
 Before reading this, you should have a good understanding of CSS specificity, and the [LESS](http://lesscss.org/) syntax. As a rule of thumb, don't nest further than 3 levels deep. If you find yourself going further, think about reorganizing your rules (either the specificity needed, or the layout of the nesting).
 
+### What good CSS does
+
+- Doesn't break any functionality of plain html.
+- Makes an interface more readable for everyone on any device.
+- Enhances the usability of an interface for all devices.
+- Allows you to quickly change a single interface without breaking other unseen interfaces.
+- Renders quickly in the browser.
+- Is 60fps (no jank on window resize or during scrolling).
+
+### What good CSS is
+
+- Highly reusable - even across projects.
+- Well documented.
+- Easy to read and understand.
+- ID free.
+- Mobile-first.
+- Easy to maintain.
+- Very very small.
+- Unassuming.
+
+### CSS coding styles
 - Use two-space, soft-indentation (`  `).
 - Use LESS on everything you can.
 - Use dashes in class names (`.navbar-top`).
