@@ -40,6 +40,7 @@ Before reading this, you should have a good understanding of CSS specificity, an
 
 ### CSS coding styles
 - Use two-space, soft-indentation (`  `).
+- Use lowercase.
 - Use LESS on everything you can.
 - Use dashes in class names (`.navbar-top`).
 - Use meaningful class names (`.button-primary` instead of `.yee-1901`). Classes should define why that style is there not what it looks like.
